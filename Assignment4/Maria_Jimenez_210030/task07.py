@@ -20,7 +20,7 @@ from rdflib.namespace import RDF, RDFS
 # Do not change the name of the variables
 g = Graph()
 g.namespace_manager.bind('ns', Namespace("http://somewhere#"), override=False)
-g.parse(github_storage+"/rdf/data06.ttl", format="TTL")
+g.parse(github_storage+"/rdf/data06.ttl", format="turtle")
 report = Report()
 
 # %% [markdown]
